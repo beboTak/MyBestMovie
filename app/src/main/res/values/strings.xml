@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyBestMovies</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_title_chose_order">Show Movie By</string>
+    <string name="pref_size_key" translatable="false">size</string>
+
+    <string name="pref_popular_value" translatable="false">popular</string>
+    <string name="pref_toprated_value" translatable="false">top rated</string>
+    <string name="pref_favorate_value" translatable="false">favoriate</string>
+    <string name="movies_categories_key">categoriesKey</string>
+    <string name="default_movies_categories">popular</string>
+    <string name="titlename">Chappie</string>
+    <string name="api_key">BuildConfig.ApiKey</string>
+    <string name="action_favorite">Favorite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

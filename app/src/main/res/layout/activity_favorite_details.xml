@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/favorite_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:background="@color/titlebackgroundcolor"
+                android:gravity="center"
+                android:textAlignment="viewStart"
+
+                android:textSize="40sp"
+                android:text="Chappie"
+                android:textColor="@color/titlecolor"
+                android:padding="18dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/favorite_details_poster"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/chappie"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/favorite_details_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="2015"
+                    android:textSize="25sp"
+
+                    />
+                <TextView
+                    android:id="@+id/favorite_details_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120min"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20sp"
+
+                    />
+                <RatingBar
+                    android:id="@+id/favorite_details_rating"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/favorite_details_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boy Make You Be Strong To Challeng"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/movie_title_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/reviewsfaLabel"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Review"
+            android:padding="16dp"
+            android:textStyle="bold"
+            />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/favoriteReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical" />
+        </ScrollView>
+        <TextView
+            android:id="@+id/trailersfaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Trailers"
+            android:visibility="gone"
+            android:padding="16dp"
+            android:textStyle="bold"
+            />
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/favoriteTrailers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>
